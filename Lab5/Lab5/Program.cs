@@ -16,7 +16,7 @@ namespace Lab5
         static void Main()
         {
             //Задание 1
-            string[] input = File.ReadAllLines(@"D:\github\Lab5\Text1.txt"); //чтение массива строк
+            string[] input = File.ReadAllLines(@"D:\github\Lab5\Text1.txt");
             Regex regex1 = new Regex(@"^а$"); 
             Regex regex2 = new Regex(@"[а]{6}");
             Regex regex3 = new Regex(@"а\s[а]{2}\s");

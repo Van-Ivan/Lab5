@@ -1,0 +1,8 @@
+D:\github\Lab5\Lab5\Additional task\bin\Debug\Additional task.exe.config
+D:\github\Lab5\Lab5\Additional task\bin\Debug\Additional task.exe
+D:\github\Lab5\Lab5\Additional task\bin\Debug\Additional task.pdb
+D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.csproj.AssemblyReference.cache
+D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.csproj.SuggestedBindingRedirects.cache
+D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.csproj.CoreCompileInputs.cache
+D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.exe
+D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.pdb
