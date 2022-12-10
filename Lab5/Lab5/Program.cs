@@ -15,18 +15,19 @@ namespace Lab5
     {
         static void Main()
         {
+
             //Задание 1
-            string[] input = File.ReadAllLines(@"D:\github\Lab5\Text1.txt");
-            Regex regex1 = new Regex(@"^а$"); 
-            Regex regex2 = new Regex(@"[а]{6}");
-            Regex regex3 = new Regex(@"а\s[а]{2}\s");
+            string[] input = File.ReadAllLines(@"Text1.txt");
+            //Regex regex1 = new Regex(@"^а$"); 
+            //Regex regex2 = new Regex(@"[а]{6}");
+            //Regex regex3 = new Regex(@"а\s[а]{2}\s");
 
             
             for (int i = 0; i < input.Length; ++i)
             {
                 Console.Write(input[i]);
             
-                if (regex1.IsMatch(input[i]) || regex2.IsMatch(input[i]) || regex3.IsMatch(input[i])) //если строка подходит под любой паттерн
+                if (new Regex(@"(^а$)|(аааааа)|(а аа а)").IsMatch(input[i])) 
                 {
                     Console.Write(" - Строка подходит");
                 }
@@ -43,7 +44,7 @@ namespace Lab5
 
             //Задание 3
             Console.WriteLine("\nЗадание 3");
-            input = File.ReadAllLines(@"D:\github\Lab5\Text3.txt");
+            input = File.ReadAllLines(@"Text3.txt");
             foreach (string line in input)
             {
                 Console.Write(line + " - ");
@@ -52,11 +53,11 @@ namespace Lab5
 
             //Задание 4
             Console.WriteLine("\nЗадание 4");
-            Console.OutputEncoding = Encoding.UTF8; 
+            //Console.OutputEncoding = Encoding.UTF8; 
 
-            input = File.ReadAllLines(@"D:\github\Lab5\text4.txt");
+            input = File.ReadAllLines(@"Text4.txt");
 
-            var patternFor4Exs = new Regex(@"[А-Я][а-я]+([-][А-Я][а-я]+)?[:]\s(широта\s)?[0-9]{1,2}(\.[0-9]+)?,?\s(долгота\s)?[0-9]{1,2}(\.[0-9]+)?");
+            var patternFor4Exs = new Regex(@"(?<city>[А-Я][а-я]+([-][А-Я][а-я]+)*)[:]\s+(?<shirota>(широта\s+)?[0-9]{1,2}(\.[0-9]+)?,?)\s(?<dolgota>(долгота\s)?[0-9]{1,2}(\.[0-9]+)?)");
             //Паттерн для поиска подходящих строк
             var city = new Regex(@"[А-Я][а-я]+([-][А-Я][а-я]+)?");
             //Паттерн для поиска названия города
@@ -66,12 +67,14 @@ namespace Lab5
             foreach (string line in input)
             {
                 if(patternFor4Exs.IsMatch(line))
-                    Console.WriteLine(city.Match(line) + " Ш: " + digit.Match(line) + " Д: " + digit.Match(line));
+                    Console.WriteLine(patternFor4Exs.Match(line).Groups["city"] + " Ш: " + 
+                        patternFor4Exs.Match(line).Groups["shirota"] + " Д: " + 
+                        patternFor4Exs.Match(line).Groups["dolgota"]);
             }
             //Задание 5
             Console.WriteLine("\nЗадание 5");
 
-            input = File.ReadAllLines(@"D:\github\Lab5\Лабораторная работа 5 - testData.xml");
+            input = File.ReadAllLines(@"Лабораторная работа 5 - testData.xml");
 
             Console.WriteLine("Пункт а");
 

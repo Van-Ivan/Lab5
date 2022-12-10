@@ -1,0 +1,5 @@
+failEmailmail.ru
+successEmail@mail.ru
+sucCess_Email2@mail.ru
+test@test.test
+2jk1@test.test.ru

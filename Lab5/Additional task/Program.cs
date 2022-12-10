@@ -15,23 +15,24 @@ namespace Additional_task
             string example = "Добро пожаловать в наш магазин, вот наши цены:" +
                              " 1 кг. яблоки - 90 руб., 2 кг. апельсины - 130 руб. " +
                              "Также в ассортименте орехи в следующей фасовке: 0.5 кг. миндаль - 500 руб.";
-            var rPrice = new Regex(@"\d+(\.\d)?\sруб");
-            MatchCollection priceCollection = rPrice.Matches(example);
-            var rWeight = new Regex(@"\d+(\.\d+)?\sкг");
-            MatchCollection weightCollection = rWeight.Matches(example);
-            var rProduct = new Regex(@"[а-я]+\s-");
-            MatchCollection productCollection = rProduct.Matches(example);
 
-            var rValue = new Regex(@"\d+(\.\d+)?");
+            var regex = new Regex(@"(?<product>[а-я]+\s-).(?<price>\d+(\.\d)?\sруб).(?<weight>\d+(\.\d+)?\sкг)");
+            MatchCollection collection = regex.Matches(example);
+
             double weight;
             double priceByKg;
-            for (int i = 0; i < weightCollection.Count; i++)
+
+            foreach (Match match in collection)
             {
-                weight = Convert.ToDouble(rValue.Match(weightCollection[i].Value).Value, CultureInfo.InvariantCulture);
-                priceByKg = Convert.ToDouble(rValue.Match(priceCollection[i].Value).Value, CultureInfo.InvariantCulture);
+                weight = Convert.ToDouble(match.Groups["weight"]);
+                priceByKg = Convert.ToDouble(match.Groups["price"]);
                 if (weight != 1)
                     priceByKg = priceByKg / weight;
-                Console.WriteLine($"{productCollection[i]} {priceByKg} за 1 кг");
+            }
+
+                foreach (Match match in collection)
+            {
+                Console.WriteLine($" цена {match.Groups["product"]} за 1 кг = ");
             }
         }
     }

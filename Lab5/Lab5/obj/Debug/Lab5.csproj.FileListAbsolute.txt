@@ -6,3 +6,10 @@ D:\github\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.SuggestedBindingRedirects.cache
 D:\github\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
 D:\github\Lab5\Lab5\Lab5\obj\Debug\Lab5.exe
 D:\github\Lab5\Lab5\Lab5\obj\Debug\Lab5.pdb
+Z:\гит\Lab5\Lab5\Lab5\bin\Debug\Lab5.exe.config
+Z:\гит\Lab5\Lab5\Lab5\bin\Debug\Lab5.exe
+Z:\гит\Lab5\Lab5\Lab5\bin\Debug\Lab5.pdb
+Z:\гит\Lab5\Lab5\Lab5\obj\Debug\Lab5.csprojAssemblyReference.cache
+Z:\гит\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+Z:\гит\Lab5\Lab5\Lab5\obj\Debug\Lab5.exe
+Z:\гит\Lab5\Lab5\Lab5\obj\Debug\Lab5.pdb

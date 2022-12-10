@@ -6,3 +6,10 @@ D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task 1.csproj.Suggested
 D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task 1.csproj.CoreCompileInputs.cache
 D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.exe
 D:\github\Lab5\Lab5\Additional task\obj\Debug\Additional task.pdb
+Z:\гит\Lab5\Lab5\Additional task\bin\Debug\Additional task.exe.config
+Z:\гит\Lab5\Lab5\Additional task\bin\Debug\Additional task.exe
+Z:\гит\Lab5\Lab5\Additional task\bin\Debug\Additional task.pdb
+Z:\гит\Lab5\Lab5\Additional task\obj\Debug\Additional task 1.csproj.CoreCompileInputs.cache
+Z:\гит\Lab5\Lab5\Additional task\obj\Debug\Additional task.exe
+Z:\гит\Lab5\Lab5\Additional task\obj\Debug\Additional task.pdb
+Z:\гит\Lab5\Lab5\Additional task\obj\Debug\Additional task 1.csprojAssemblyReference.cache

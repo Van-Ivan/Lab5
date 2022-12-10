@@ -13,7 +13,6 @@ namespace Additional_task_2
         static void Main(string[] args)
         {
             string[] input = File.ReadAllLines(@"D:\github\Lab6\Адреса.txt");
-            string[] output;
 
             var rAddress = new Regex(@"(http | https | ftp)?(://)?(w{3})?([^-][a-z0-9_]+\.){2,5}");
 
@@ -22,7 +21,6 @@ namespace Additional_task_2
                 Console.WriteLine($"{line} {rAddress.IsMatch(line)}");
             }
 
-            //File.WriteAllLines(@"D:\github\Lab6\Адреса.txt", output);
         }
     }
 }
