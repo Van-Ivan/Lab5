@@ -12,13 +12,13 @@ namespace Additional_task_2
     {
         static void Main(string[] args)
         {
-            string[] input = File.ReadAllLines(@"D:\github\Lab6\Адреса.txt");
+            string[] input = File.ReadAllLines(@"Адреса.txt");
 
             var rAddress = new Regex(@"(http | https | ftp)?(://)?(w{3})?([^-][a-z0-9_]+\.){2,5}");
 
             foreach (string line in input)
             {
-                Console.WriteLine($"{line} {rAddress.IsMatch(line)}");
+                Console.WriteLine($"{line} - {rAddress.IsMatch(line)}");
             }
 
         }
